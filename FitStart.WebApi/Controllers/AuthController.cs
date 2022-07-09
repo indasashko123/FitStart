@@ -58,7 +58,7 @@ namespace FitStart.WebApi.Controllers
                 var acc = await Mediator.Send(query);
                 if (acc != null)
                 {
-                    var token = Authenticate(acc.Id, acc.Role.ToString());
+                    var token = await Authenticate(acc.Id, acc.Role.ToString());
                     var response = new
                     {
                         access_token = token,
@@ -70,9 +70,6 @@ namespace FitStart.WebApi.Controllers
             }
             return Results.Unauthorized();
         }
-
-
-
         private async Task<string> Authenticate(Guid id, string role)
         {
             var claims = new List<Claim> 
@@ -80,7 +77,6 @@ namespace FitStart.WebApi.Controllers
                 new Claim(ClaimTypes.Name, id.ToString()) ,
                 new Claim(ClaimTypes.Role, role)
             };
-            // создаем JWT-токен
             var jwt = new JwtSecurityToken(
                     issuer: AuthConfig.ISSUER,
                     audience: AuthConfig.AUDIENCE,
