@@ -5,21 +5,21 @@ VisualStudioVersion = 17.2.32505.173
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{86D5F494-0A44-4C51-9A3C-D80395FC810E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitStart.Core", "FitStart.Core\FitStart.Core.csproj", "{2977A9FE-482A-4BB2-A0CD-22AC40A32B02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FitStart.Core", "FitStart.Core\FitStart.Core.csproj", "{2977A9FE-482A-4BB2-A0CD-22AC40A32B02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitStart.Application", "FitStart.Application\FitStart.Application.csproj", "{28FB685A-A44C-4CAA-ABA2-69B1C6B3C25D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FitStart.Application", "FitStart.Application\FitStart.Application.csproj", "{28FB685A-A44C-4CAA-ABA2-69B1C6B3C25D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{38B28BF6-DEEC-451C-BCFA-AE3F1AA49D49}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitStart.SideApiService", "FitStart.SideApiService\FitStart.SideApiService.csproj", "{8E0675C6-DB6C-431A-93AF-57BC2520D8C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FitStart.SideApiService", "FitStart.SideApiService\FitStart.SideApiService.csproj", "{8E0675C6-DB6C-431A-93AF-57BC2520D8C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitStart.Persistance", "FitStart.Persistance\FitStart.Persistance.csproj", "{26DDB94B-58DF-427E-854C-C7858411DFF2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FitStart.Persistance", "FitStart.Persistance\FitStart.Persistance.csproj", "{26DDB94B-58DF-427E-854C-C7858411DFF2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{BF0AA6EE-F2E5-4BCE-884B-2BF933C505B5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{9AC32E4C-B25D-4206-B50B-391A809D9EE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitStart.Api", "FitStart.Api\FitStart.Api.csproj", "{BCC72D12-BF19-4BA6-B868-F7C449567A47}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FitStart.WebApi", "FitStart.WebApi\FitStart.WebApi.csproj", "{59248EED-55B2-4AFD-B47E-3E229A904856}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,10 +43,10 @@ Global
 		{26DDB94B-58DF-427E-854C-C7858411DFF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{26DDB94B-58DF-427E-854C-C7858411DFF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26DDB94B-58DF-427E-854C-C7858411DFF2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BCC72D12-BF19-4BA6-B868-F7C449567A47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BCC72D12-BF19-4BA6-B868-F7C449567A47}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BCC72D12-BF19-4BA6-B868-F7C449567A47}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BCC72D12-BF19-4BA6-B868-F7C449567A47}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59248EED-55B2-4AFD-B47E-3E229A904856}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59248EED-55B2-4AFD-B47E-3E229A904856}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59248EED-55B2-4AFD-B47E-3E229A904856}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59248EED-55B2-4AFD-B47E-3E229A904856}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,7 +56,7 @@ Global
 		{28FB685A-A44C-4CAA-ABA2-69B1C6B3C25D} = {86D5F494-0A44-4C51-9A3C-D80395FC810E}
 		{8E0675C6-DB6C-431A-93AF-57BC2520D8C0} = {38B28BF6-DEEC-451C-BCFA-AE3F1AA49D49}
 		{26DDB94B-58DF-427E-854C-C7858411DFF2} = {38B28BF6-DEEC-451C-BCFA-AE3F1AA49D49}
-		{BCC72D12-BF19-4BA6-B868-F7C449567A47} = {BF0AA6EE-F2E5-4BCE-884B-2BF933C505B5}
+		{59248EED-55B2-4AFD-B47E-3E229A904856} = {BF0AA6EE-F2E5-4BCE-884B-2BF933C505B5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D349FC79-2F36-47D3-9E04-3F2EBFD4AFB9}
